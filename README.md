@@ -4,7 +4,7 @@ Various example files for use with [RadSense1](https://maketronics.no/radsense-1
 
 ## How to use
 
-If you are unfamiliar with GIT, just [click the green "Code"-button on the main page and select Download ZIP](https://github.com/jenschr/Radsense1_examples). This will download a Zip archive with all the files. Unpack/Extract it on your computer and enter either the arduino folder or the PlatformIO folder - depending on the software you prefer.
+If you are unfamiliar with GIT, just [click the green "Code"-button on the main page and select Download ZIP](https://github.com/jenschr/Radsense1_examples). This will download a Zip archive with all the files. Unpack/Extract it on your computer and enter either the arduino folder or the PlatformIO folder - depending on the software you want to use.
 
 Each folder holds several examples, so open the folder in your favorite IDE to test.
 
