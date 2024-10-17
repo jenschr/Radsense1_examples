@@ -9,14 +9,14 @@
 #define SSID "your-ssid"                // Change this to your WiFi SSID
 #define PASSWORD "your-password"        // Change this to your WiFi password
 #define PushsaferKey "XXXXXXXXXXXXX"    // Private key, found on your Pushsafer Dashboard
-#define DETECTION_RANGE 100             // Detection distance in millimeters
-// The radar is measuring millimeters. To use inches, 
-// multiply inches by the MM_TO_INCH factor like this:
-// #define DETECTION_RANGE 4 * MM_TO_INCH
+#define DETECTION_RANGE 100             // Detection distance in centimeters
+// The radar is measuring centimeters. To use inches, 
+// multiply inches by the CM_TO_INCH factor like this:
+// #define DETECTION_RANGE 4 * CM_TO_INCH
 
 // Constants
 #define RADAR_SERIAL Serial1
-#define MM_TO_INCH 25.4
+#define CM_TO_INCH 25.4
 #define SCL_PIN 1
 #define SDA_PIN 0
 #define LED_PIN 2 // v1.6 = 2, v1.7 = 5
@@ -42,6 +42,9 @@ unsigned long lastTimeMessageWasSent = 0;
 // Updates all the programmable RGB LEDs
 void setPixels(uint8_t red, uint8_t green, uint8_t blue)
 {
+  // uncomment to never use LEDs
+  // return;
+  
   // if we don't have a pixel object, make one
   if(pixels == nullptr)
   {
